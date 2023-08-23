@@ -1,0 +1,36 @@
+#title{
+    color: white;
+    margin-top: 70px;
+    background: url(../img/collection-min.jpg);
+    background-position: top;
+    height: 150px;
+}
+#title h1{
+    font-weight: bolder;
+    font-size: 60px;
+    position: relative;
+    top: 30%;
+}
+
+
+
+  @media screen and (max-width: 890px) {
+    .inner_app{
+        width: 100%;
+    }
+    #appointment h1{
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 615px) {
+    #title h1{
+        font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 376px) {
+    #title h1{
+        font-size: 40px;
+        top: 20%;
+    }
+  }

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ /* The side navigation menu */
+ .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  nav a,.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: rgb(76, 0, 255);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Links on mouse-over */
+  .sidebar .links a:hover:not(.active) {
+    background-color: rgb(56, 71, 53);
+    color: white;
+  }
+  
+
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  .content {
+    margin-left: 200px;
+  }
+  
+  .content .row,.content .box{
+    padding: 20px;
+  }
+
+  .content h1{
+    padding: 5px 0;
+  }
+  .content .row .pie{
+    margin: 40px auto;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      text-align: center;
+    }
+    .sidebar a {
+      float: left;
+    }
+    div.content {
+      margin-left: 0;
+    }
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  } 
+
+  /* Admin Contact and account*/
+
+  .content .abox{
+    margin: 10px auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+    background-color: #025bff;
+    color: #fff;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  /* admin-upload */
+
+.textinput {
+  width: 90%;
+  min-height: 80px;
+}
+
+  /* admin-appointment and admin-shop */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+      .accordion {
+       background-color: #eee;
+       color: #444;
+      cursor: pointer;
+       padding: 18px;  
+       width: 100%;
+      text-align: left;
+       border: none;
+      outline: none;
+       transition: 0.4s;
+      }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+   }
+
+    /* Style the accordion panel. Note: hidden by default */
+   .panel {
+       padding: 0 18px;
+      background-color: white;
+     display: none;
+      overflow: hidden;
+     }
+     .operation{
+     position: absolute;
+     right: 25px;
+    }
+
+
+
+/* Responsible */
+    @media screen and (max-width: 790px) {
+      .hide{
+        display: none;
+        }
+    } 
+
+    @media screen and (max-width: 500px) {
+        .content .row,.content .box{
+        padding: 20px 5px;
+       }
+     } 
+    

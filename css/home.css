@@ -1,0 +1,268 @@
+/*  Global */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.margin_top{
+    margin-top: 70px;
+}
+.new_products .mbtn:hover,.contact .cbtn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+/* Navbar */
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.nav-item{
+    padding: 5px 15px;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel{
+    margin-top: 70px;
+}
+.carousel .carousel-indicators{
+    position: absolute;
+    bottom: 70px;
+}
+.carousel img{
+    height: 600px;
+    object-fit: cover;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+}
+.carousel-caption h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+.nbtn{
+    background-color: black;
+    padding: 15px 25px;
+    color: white;
+}
+.nbtn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/* New products */
+.new_products{
+    color: black;
+    padding: 50px 10px;
+}
+.new_products h1{
+    margin-bottom: 50px;
+}
+.new_products .more{
+    margin-top: 20px;
+}
+.new_products .mbtn{
+    background: lightcyan;
+    padding: 5px 20px;
+    width: 80px;
+    height: 35px;
+    color: black;
+    border: 1px solid black;
+}
+.card{
+    border: none;
+    background: transparent;
+}
+.new_products .card img{
+    object-fit: cover;
+    height: 250px;
+}
+.card:hover img{
+    filter: brightness(60%);
+    transition: 0.5s;
+}
+
+/* Collection */
+.collection{
+    background: black;
+}
+.collection .container{
+    padding: 60px;
+    margin-bottom: 0;
+}
+.collection h1{
+    color: white;
+    padding-bottom: 40px;
+}
+.collection .collbox{
+    padding: 10px;
+}
+.collection .card{
+    overflow: hidden;
+    background: transparent;
+    max-height: 600px;
+    max-width: 400px;
+}
+.collection img{
+    object-fit: cover;
+    height: 250px;
+}
+.collection span{
+    z-index: 1;
+    background-color: white;
+    padding: 8px 15px;
+    color: black;
+    text-align: center;
+}
+.collection .card:hover img{
+    transform: scale(1.1);
+}
+
+/* Services */
+.services h1{
+    padding-top: 50px;
+}
+.services .row{
+    padding: 50px 0px;
+}
+.services h1,.services h3,.services p{
+    margin: 0;
+    text-align: center;
+}
+.services .fas{
+    font-size: 100px;
+    padding: 30px 0;
+}
+.services p{
+    padding-top: 10px;
+}
+
+/* Contact */
+.contact{
+    background-color: rgb(34, 41, 38);
+    color: white;
+}
+.contact_info{
+    padding-bottom: 20px;
+}
+.contact_info a{
+    color: white;
+    text-decoration: none;
+}
+.contact_info a:hover{
+    color: lightcoral;
+    transition: 0.5s;
+}
+.contact_box{
+    padding: 50px;
+}
+.contact h1{
+    padding: 10px 0;
+}
+.contact .fas{
+    padding-right: 10px;
+}
+.contact_form .row{
+    padding-bottom: 20px;
+}
+.contact_form input[type="text"],input[type="email"]{
+    height: 40px;
+}
+.contact .cbtn{
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    color: black;
+    border: none;
+}
+
+/* Footer */
+footer{
+    background: rgb(26, 27, 25);
+    color: white;
+}
+footer h5{
+    margin-bottom: 0;
+}
+.social_media{
+    text-align: center;
+}
+.social_media .fab{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.social_media .fab:hover{
+    color: lightcoral;
+    transition: 0.5s;
+}
+.copy-info{
+    padding: 15px;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 575px) {
+    .carousel h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+  }
+
+@media screen and (max-width: 575px) {
+    .carousel img{
+        height: 500px;
+    }
+    .nbtn{
+        background-color: black;
+        padding: 10px 15px;
+        color: white;
+    }
+    .new_products .card img{
+        object-fit: cover;
+        height: auto;
+    }
+    .card .pbtn{
+        top: auto;
+        bottom: 100px;
+    }
+    .collection img{
+        height: 400px;
+    }
+    .collection .card{
+        max-width: 500px;
+        max-height: auto;
+    }
+    footer h5{
+        font-size: 15px;
+    }
+    .copy-info {
+        padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 411px) {
+    .navbar-brand {
+        font-size: 20px;
+        padding: 12px 0px;
+    }
+  }

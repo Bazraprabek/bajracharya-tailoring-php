@@ -1,0 +1,76 @@
+.profile{
+    margin: 130px 0 80px 0;
+    text-align: center;
+}
+.profile .login{
+    width: 500px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.profile .signup{
+    width: 800px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 50px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.profile .signup .row{
+    padding: 10px;
+}
+.profile .box{
+    padding: 15px 0px;
+}
+.profile label{
+  padding-bottom: 5px;
+}
+.profile input{
+    /* width: 260px; */
+    padding: 5.5px 20px;
+}
+.profile button{
+    background-color: blueviolet;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.profile button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.profile p{
+    padding-top: 15px;
+}
+.profile a{
+    padding-left: 5px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .profile .signup{
+        width: auto;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .profile .login,.profile .signup{
+        padding: 30px 5px;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .profile input[type="text"],.profile input[type="number"],.profile input[type="email"],.profile input[type="password"]{
+        width: 200px;
+        padding: 5.5px 10px;
+    }
+  }

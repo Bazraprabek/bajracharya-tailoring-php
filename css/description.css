@@ -1,0 +1,48 @@
+.description{
+    margin: 100px 0 0;
+    background: whitesmoke;;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.description img {
+    width: 450px;
+    height: 400px;
+    object-fit: contain;
+    /* border: 1px solid #000; */
+  }
+
+select {
+  width: 220px;
+  padding: 10px;
+}
+
+/* shop now */
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .description img {
+    width: 350px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+    .description{
+      text-align: center;
+    }
+    .description img {
+      width: 300px;
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 467px) {
+    .description img {
+      width: 200px;
+      height: 250px;
+    }
+  }
